@@ -15,7 +15,6 @@ public class LP extends Almacenamiento {
     //METODO HEREDADO DE ALMACENAMIENTO PARA GIRAR EL LP
     @Override
     public void girarDisco() {
-        System.out.println(" ");
         System.out.print("LP ");
         super.girarDisco();
     }

@@ -78,13 +78,20 @@ public abstract class Almacenamiento implements Disco {
         System.out.println("(a " + this.getVelocidad() + " rpm.)");
     }
 
+    //METODO PARA INTRODUCIR LOS DISCOS
+    public void inicializar()  {
+        System.out.println(" ");
+        System.out.println("Introduciendo el disco...");
+    }
+
     //METODO ABSTRACTO PARA LEER LA INFORMACION ALMACENADA EN LOS DISCOS
     abstract void leer();
 
     //METODO PARA FORMATEAR LA INFORMACION DE LOS DISCOS
     public void borrar()  {
         this.setContenido(" ");
-        System.out.println("Formateando el disco...");
+        System.out.println("Formateando el disco...\n");
+
     }
 
     //METODO PARA ALMACENAR NUEVA INFORMACION EN EL DISCO
@@ -95,5 +102,11 @@ public abstract class Almacenamiento implements Disco {
         System.out.println("Escribe el contenido nuevo que deseas añadir:");
         cont = sc.nextLine();
         this.setContenido(cont);
+    }
+
+    //METODO PARA RETIRAR LOS DISCOS
+    public void finalizar()  {
+        System.out.println(" ");
+        System.out.println("Sacando el disco...");
     }
 }

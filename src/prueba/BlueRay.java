@@ -11,7 +11,6 @@ public class BlueRay extends Almacenamiento {
     //METODO HEREDADO DE ALMACENAMIENTO PARA GIRAR EL BLUERAY
     @Override
     public void girarDisco() {
-        System.out.println(" ");
         System.out.print("BlueRay ");
         super.girarDisco();
     }

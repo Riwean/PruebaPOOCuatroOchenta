@@ -11,7 +11,6 @@ public class CD extends Almacenamiento {
     //METODO HEREDADO DE ALMACENAMIENTO PARA GIRAR EL CD
     @Override
     public void girarDisco() {
-        System.out.println(" ");
         System.out.print("CD ");
         super.girarDisco();
     }

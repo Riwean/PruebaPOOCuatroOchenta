@@ -3,7 +3,7 @@ package prueba;
 public class Principal {
 
     //BLOQUE DE DEFINICION DE VARIABLES ESTATICAS
-    static final int CAPACIDAD_CD=700, CAPACIDAD_BR=25600, VELOCIDAD_CD=500, VELOCIDAD_BLUERAY=200, VELOCIDAD_HDD=5400,
+    static final int CAPACIDAD_CD=700, CAPACIDAD_BR=25600, VELOCIDAD_CD=200, VELOCIDAD_BLUERAY=500, VELOCIDAD_HDD=5400,
                         CAPACIDAD_LP=5, VELOCIDAD_LP=45;
 
     //MAIN
@@ -17,29 +17,37 @@ public class Principal {
         Rueda RD1= new Rueda("monociclo");
 
         //Metodos para CD
+        CD1.inicializar();
         CD1.girarDisco();
         CD1.leer();
         CD1.borrar();
         CD1.almacenar();
         CD1.leer();
+        CD1.finalizar();
 
         //Metodos para Disco Duro
+        DD1.inicializar();
         DD1.girarDisco();
         DD1.leer();
         DD1.borrar();
         DD1.almacenar();
         DD1.leer();
+        DD1.finalizar();
 
         //Metodos para BlueRay
+        BR1.inicializar();
         BR1.girarDisco();
         BR1.leer();
         BR1.borrar();
         BR1.almacenar();
         BR1.leer();
+        BR1.finalizar();
 
         //Metodos para Disco de Vinilo (LP)
+        LP1.inicializar();
         LP1.girarDisco();
         LP1.leer();
+        LP1.finalizar();
 
         //Metodos para Frisbee
         FB1.girarDisco();
