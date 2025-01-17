@@ -33,15 +33,15 @@ public class DiscoDuro extends Almacenamiento {
         System.out.println("La capacidad del Disco Duro introducido es: " + (this.getCapacidad() / 1024) + " GB.");
     }
 
-    @Override
     //METODO PARA INICIALIZAR EL DISCO DURO
+    @Override
     public void inicializar()  {
         System.out.println(" ");
         System.out.println("Encendiendo el disco duro...");
     }
 
-    @Override
     //METODO PARA APAGAR EL DISCO DURO
+    @Override
     public void finalizar()  {
         System.out.println(" ");
         System.out.println("Apagando el disco duro...");

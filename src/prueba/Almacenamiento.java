@@ -26,47 +26,40 @@ public abstract class Almacenamiento implements Disco {
         this.velocidad = velocidad;
     }
 
-    //GETTER PARA NOMBRE
+    //GETTERS PARA LOS CAMPOS
     public String getNombre() {
         return nombre;
     }
 
-    //SETTER PARA NOMBRE
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    //GETTER PARA CONTENIDO
     public String getContenido() {
         return contenido;
     }
 
-    //SETTER PARA CONTENIDO
-    public void setContenido(String contenido) {
-        this.contenido = contenido;
-    }
-
-    //GETTER PARA TIPO DE DISCO
     public String getTipoDeDisco() {
         return tipoDeDisco;
     }
 
-    //SETTER PARA TIPO DE DISCO
-    public void setTipoDeDisco(String tipoDeDisco) {
-        this.tipoDeDisco = tipoDeDisco;
-    }
-
-    //GETTER PARA CAPACIDAD
     public int getCapacidad() {
         return capacidad;
     }
 
-    //GETTER PARA VELOCIDAD
     public int getVelocidad() {
         return velocidad;
     }
 
-    //SETTER PARA VELOCIDAD
+    //SETTERS PARA LOS CAMPOS
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setContenido(String contenido) {
+        this.contenido = contenido;
+    }
+
+    public void setTipoDeDisco(String tipoDeDisco) {
+        this.tipoDeDisco = tipoDeDisco;
+    }
+
     public void setVelocidad(int velocidad) {
         this.velocidad = velocidad;
     }
@@ -91,7 +84,6 @@ public abstract class Almacenamiento implements Disco {
     public void borrar()  {
         this.setContenido(" ");
         System.out.println("Formateando el disco...\n");
-
     }
 
     //METODO PARA ALMACENAR NUEVA INFORMACION EN EL DISCO
